@@ -1,0 +1,56 @@
+.container{
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+
+.container > div {
+  border: 2px silver solid;
+  width: 33%;
+  font-size: 50px;
+}
+
+.firstbox{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.firstbox > div {
+  border: 1px black solid;
+  text-align: center;
+  line-height: 2;
+}
+
+.logo {
+  width: 100%;
+}
+
+.search {
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  background-color: #e6e6e6;
+  border-radius: 30%;
+  border: 1px #e6e6e6 solid;
+}
+
+.secondbox{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.secondbox > div, .thirdbox > div {
+  border: 1px black solid;
+  font-size: 30px;
+  text-align: center;
+  line-height: 3;
+}
+
+.secondbox a, .thirdbox a{
+  color: black;
+}
+
+.thirdbox{
+  display: grid;
+  grid-template-columns: 3fr repeat(4, 1fr);
+}
