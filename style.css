@@ -54,3 +54,23 @@
   display: grid;
   grid-template-columns: 3fr repeat(4, 1fr);
 }
+
+.bodycontainer {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+.bodycontainer > div {
+  border: 1px silver solid;
+}
+
+.column1{
+  display: grid;
+  grid-template-rows: repeat(14, 1fr);
+}
+
+.column1 > div {
+  border: 1px silver solid;
+  line-height: 2;
+  padding-left: 10px;
+}
