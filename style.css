@@ -89,3 +89,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+
+.thirdcolumn > div{
+  border-bottom: 1px silver solid;
+}
