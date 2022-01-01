@@ -5,9 +5,8 @@
 }
 
 .container > div {
-  border: 2px silver solid;
   width: 33%;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .firstbox{
@@ -16,7 +15,7 @@
 }
 
 .firstbox > div {
-  border: 1px black solid;
+
   text-align: center;
   line-height: 2;
 }
@@ -40,8 +39,7 @@
 }
 
 .secondbox > div, .thirdbox > div {
-  border: 1px black solid;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   line-height: 3;
 }
@@ -53,6 +51,7 @@
 .thirdbox{
   display: grid;
   grid-template-columns: 3fr repeat(4, 1fr);
+
 }
 
 .bodycontainer {
@@ -92,4 +91,13 @@
 
 .thirdcolumn > div{
   border-bottom: 1px silver solid;
+}
+
+.float{
+  float: left;
+}
+
+.container2{
+  display: flex;
+  justify-content: space-around;
 }
