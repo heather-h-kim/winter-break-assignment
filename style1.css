@@ -6,23 +6,100 @@
 header{
   grid-column: 1/4;
   grid-row: 1;
-  background-color: #e6ccff;
+  border-bottom: 1px #d9d9d9 solid;
 }
 
 .firstcolumn{
   grid-column: 1/2;
   grid-row: 2;
-  background-color: #ce99ff;
 }
 
 .secondcolumn{
   grid-column: 2/3;
   grid-row: 2;
-  background-color: #a94dff;
 }
 
 .thirdcolumn{
   grid-column: 3/4;
   grid-row: 2;
-  background-color: #f3e6ff;
+}
+
+.headercontainer{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr
+}
+
+.first{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.logo{
+  width: 100%;
+}
+
+.search {
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  background-color: #e6e6e6;
+  border-radius: 30%;
+  border: 1px #e6e6e6 solid;
+}
+
+.second{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.second > div, .third > div {
+  font-size: 20px;
+  text-align: center;
+  line-height: 3;
+}
+
+.third{
+  display: grid;
+  grid-template-columns: 3fr repeat(4, 1fr);
+}
+
+.second a, .third a{
+  color: black;
+}
+
+.firstcolumn{
+  display: grid;
+  grid-template-column: 1fr;
+  grid-auto-rows: minmax(40px, auto);
+  background-color: #f2f2f2;
+}
+
+.secondcolumn{
+  display: grid;
+  grid-auto-rows: minmax(50px, auto);
+  background-color: #f2f2f2;
+  gap: 20px;
+}
+
+.secondcolumn > div{
+  background-color: white;
+  box-shadow: 3px 3px 5px #d9d9d9;
+}
+.secondcolumn-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.thirdcolumn{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #f2f2f2;
+}
+
+.thirdcolumn > div{
+  border-bottom: 1px #d9d9d9 solid;
+}
+
+.firstcolumn a, .secondcolumn a{
+  color: black;
 }
