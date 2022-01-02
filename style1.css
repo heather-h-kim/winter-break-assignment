@@ -1,0 +1,28 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+header{
+  grid-column: 1/4;
+  grid-row: 1;
+  background-color: #e6ccff;
+}
+
+.firstcolumn{
+  grid-column: 1/2;
+  grid-row: 2;
+  background-color: #ce99ff;
+}
+
+.secondcolumn{
+  grid-column: 2/3;
+  grid-row: 2;
+  background-color: #a94dff;
+}
+
+.thirdcolumn{
+  grid-column: 3/4;
+  grid-row: 2;
+  background-color: #f3e6ff;
+}
